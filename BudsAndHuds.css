@@ -323,20 +323,44 @@ footer {
 
 /* Mobile Responsive */
 @media (max-width: 768px) {
-	nav ul {
-		gap: 1rem;
-	}
+    /* Hero Section */
+    .hero h1 {
+        font-size: 2.5rem;
+    }
 
-	.hero h1 {
-		font-size: 2.5rem;
-	}
+    .hero p {
+        font-size: 1.1rem;
+    }
 
-	.hero p {
-		font-size: 1.1rem;
-	}
+    /* Section headings */
+    section h2 {
+        font-size: 2rem;
+    }
 
-	section h2 {
-		font-size: 2rem;
-	}
+    /* Navbar adjustments */
+    nav .container {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px; /* space between logo and menu */
+    }
+
+    nav ul {
+        flex-direction: column; /* stack menu items */
+        gap: 1rem;
+    }
+
+    nav ul li a {
+        font-size: 0.9rem;
+    }
+
+    nav .logo {
+        max-width: 50%; /* shrink logo */
+    }
+
+    nav .logo-text {
+        text-align: center;
+        font-size: 1.5rem; /* adjust text size */
+    }
 }
+
 
