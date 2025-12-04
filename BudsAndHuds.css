@@ -338,29 +338,40 @@ footer {
     }
 
     /* Navbar adjustments */
+    nav {
+        padding: 0.5rem 0; /* reduce vertical padding */
+    }
+
     nav .container {
         flex-direction: column;
         align-items: center;
-        gap: 10px; /* space between logo and menu */
+        gap: 0.5rem; /* reduce gap */
+        padding: 0 1rem; /* reduce horizontal padding */
     }
 
     nav ul {
-        flex-direction: column; /* stack menu items */
-        gap: 1rem;
+        flex-direction: row; /* keep horizontal on mobile */
+        gap: 0.8rem; /* tighter spacing */
+        flex-wrap: wrap; /* wrap if needed */
+        justify-content: center;
     }
 
     nav ul li a {
-        font-size: 0.9rem;
+        font-size: 0.85rem;
+        padding: 0.3rem 0.5rem; /* add some clickable area */
     }
 
     nav .logo {
-        max-width: 50%; /* shrink logo */
+        width: 80px; /* smaller logo */
+        max-width: 30vw;
     }
 
     nav .logo-text {
         text-align: center;
-        font-size: 1.5rem; /* adjust text size */
+        font-size: 1.2rem; /* smaller text */
+        margin: 0; /* remove any margin */
     }
 }
 
 
+/* HAMBURGER MENU STUFF */
