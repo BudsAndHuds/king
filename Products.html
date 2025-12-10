@@ -99,6 +99,20 @@
 					<p class="price">$6.99</p>
 				</div>
 			</div>
+						<div class="gallery-item">
+				  <img src="ProductImages/Duck.png" alt="plastic ducky" class="gallery-image">
+				  <div class="product-info">
+					<h3>Duck</h3>
+					<p class="price">$6.99</p>
+				</div>
+			</div>
+						<div class="gallery-item">
+				  <img src="ProductImages/BBGun.png" alt="Small plastic bbgun" class="gallery-image">
+				  <div class="product-info">
+					<h3>Pocket bb gun + ammo</h3>
+					<p class="price">$4.99</p>
+				</div>
+			</div>
         </div>
     </section>
 
@@ -135,6 +149,15 @@
                 }
             });
         });
+		
+		// Toggle menu on hamburger click
+		const hamburger = document.getElementById('hamburger');
+		const menu = document.getElementById('menu');
+
+		hamburger.addEventListener('click', () => {
+			menu.classList.toggle('active');
+			hamburger.classList.toggle('open'); // animate hamburger into X
+		});		
     </script>
 </body>
 </html>
